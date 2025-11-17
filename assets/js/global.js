@@ -1,6 +1,6 @@
 const componentElements = document.querySelectorAll("[data-import]");
 
-const renderComponent = (elements) => {
+const loadImports = (elements) => {
   for (let element of elements) {
     const importElement = element.getAttribute("data-import");
 
@@ -15,7 +15,7 @@ const renderComponent = (elements) => {
         element.innerHTML = component;
         loadComponentScripts(element);
         const compElements = element.querySelectorAll("[data-import]");
-        renderComponent(compElements)
+        loadImports(compElements)
       })
       .catch(() => {
         element.innerHTML = `<h4>Component not found</h4>`;
@@ -23,7 +23,7 @@ const renderComponent = (elements) => {
   }
 }
 
-renderComponent(componentElements);
+loadImports(componentElements);
 
 
 function loadComponentScripts(element) {
