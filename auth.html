@@ -3,26 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
-      rel="stylesheet"/>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"/>
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/global.css" />
     <title>Smart Task Manager App</title>
   </head>
 
   <body>
-    <!-- <section class="_root">
-      <aside class="_root__aside-bar"
-        data-import="/module/sidebar/sidebar.html"> sidebar </aside>
-      <main class="_root__main" data-import="/module/main/main.html"></main>
-      <footer class="_root__footer" data-import="/module/footer/footer.html"></footer>
-    </section> -->
 
+    <section class="container">
+      <section class="root" data-import="/modules/background/backgd.html"></section>
+      <main class="root__main"></main>
+      <section id="login" data-import="/modules/login/login.html"></section>
+      <section id="signup" data-import="/modules/signup/signup.html"></section>
+    </section>
 
-    <main>
-      <h1>Welcome Back!</h1>
-    </main>
 
     <script src="/assets/js/global.js"></script>
   </body>

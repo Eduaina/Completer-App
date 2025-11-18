@@ -1,10 +1,11 @@
 #button {
     padding: 0.5rem 1rem;
-    width: 12rem;
+    width: 12.25rem;
     height: 3rem;
-    background-color: #F9FAFB;
-    border-radius: 10px;
-    border: 2px solid #E5E7EB;
+    background-color: #E9A700;
+    border-radius: .75rem;
+    /* border: 2px solid #E5E7EB; */
+    border: none;
 }
 
 #button a {
@@ -18,7 +19,6 @@
 #button a img {
     width: 1.125rem;
     height: 1.125rem;
-    /* color: #364153; */
 }
 
 #btnText {
@@ -26,5 +26,9 @@
     font-family: "ui-sans-serif", system-ui, sans-serif;
     Font-weight: 600;
     line-height: 1.25rem;
-    color: #1e293be2;
+     color: #101828;
+}
+
+#button:hover {
+  background: linear-gradient(to right, #d99114, #a1711d);
 }

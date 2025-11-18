@@ -1,0 +1,97 @@
+.body {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    position:absolute;
+}
+
+.right, .left {
+    flex: 1;
+    position: relative;
+}
+
+
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1d1de145;
+  position: relative;
+  left: 7rem;
+}
+ 
+/* PULSE GLOW — only the shadow grows */
+.circle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 35px rgba(3, 17, 169, 0.937);
+  animation: glowPulse 2.2s infinite ease-in-out;
+}
+ 
+
+.circle::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(14, 4, 41, 0.895);
+  animation: blink 1.4s infinite ease-in-out;
+  mix-blend-mode: overlay;
+}
+
+.circle.blue {
+    position: absolute;
+    bottom: 10rem;
+    left: 9rem;
+}
+
+.purple {
+  background: #2e657685;
+  box-shadow: 0 0 0 0 rgba(21, 52, 90, 0.951);
+  position: absolute;
+    top: 14rem;
+    left: 4rem;
+}
+ 
+
+.yellow {
+  background: #d2d51167;
+  box-shadow: 0 0 0 0 rgba(87, 105, 4, 0.951);
+  position: absolute;
+    top: 5rem;
+    left: 32rem;
+}
+
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(28, 5, 81, 0.978);
+  }
+  50% {
+    box-shadow: 0 0 100px 0 rgb(23, 2, 39); /* 70% of 80px = 56px */
+  }
+}
+ 
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 0.;
+  }
+}
+
+
+
+
+
+.overlay {
+    width: 100%;
+    height: 110vh;
+    position:absolute;
+    background-color: #ffffff6c;
+}
