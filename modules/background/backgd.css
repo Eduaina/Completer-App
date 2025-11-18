@@ -10,7 +10,11 @@
     position: relative;
 }
 
-
+.static-blue {
+    position: absolute;
+    top: 7.5rem;
+    left: 3.3rem;
+}
 
 .circle {
   width: 80px;
@@ -86,12 +90,36 @@
 }
 
 
-
+.triangle {
+    position: absolute;
+    right: 22rem;
+    bottom: 19.5rem;
+}
 
 
 .overlay {
     width: 100%;
     height: 110vh;
     position:absolute;
-    background-color: #ffffff6c;
+    background-color: #ffffff6e;
+}
+
+.arrow {
+    animation: bounceUpDown 1s ease-in-out infinite;
+    display: inline-block;
+    position: absolute;
+    right: 23rem;
+    top: 7rem;
+}
+
+@keyframes bounceUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* how high it jumps */
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
