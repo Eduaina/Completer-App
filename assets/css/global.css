@@ -1,18 +1,4 @@
-.container {
-    position: absolute;
-    font-family: "ui-sans-serif", system-ui, sans-serif;
-    box-sizing: border-box;
-    width: 100vw;
-    height: 108vh;
-}
 
-.root {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    position: relative;
-
-}
 
 /* .root__main {
     height: 38.625rem;

@@ -1,6 +1,6 @@
 const componentElements = document.querySelectorAll("[data-import]");
 
-const loadImports = (elements) => {
+const displayImports = (elements) => {
   for (let element of elements) {
     const importElement = element.getAttribute("data-import");
 
@@ -15,7 +15,7 @@ const loadImports = (elements) => {
         element.innerHTML = component;
         loadComponentScripts(element);
         const compElements = element.querySelectorAll("[data-import]");
-        loadImports(compElements)
+        displayImports(compElements)
       })
       .catch(() => {
         element.innerHTML = `<h4>Component not found</h4>`;
@@ -23,7 +23,7 @@ const loadImports = (elements) => {
   }
 }
 
-loadImports(componentElements);
+displayImports(componentElements);
 
 
 function loadComponentScripts(element) {
@@ -38,6 +38,6 @@ function loadComponentScripts(element) {
     }
     script.remove();
 
-    document.body.appendChild(newScript);
+    element.appendChild(newScript);
   }
 }

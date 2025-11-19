@@ -1,4 +1,4 @@
-#button {
+#button-help {
     padding: 0.5rem 1rem;
     width: 12rem;
     height: 3rem;
@@ -7,7 +7,7 @@
     border: 2px solid #E5E7EB;
 }
 
-#button a {
+#button-help a {
     text-decoration: none;
      display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@
     gap: 10px;
 }
 
-#button a img {
+#button-help a img {
     width: 1.125rem;
     height: 1.125rem;
     /* color: #364153; */
@@ -29,7 +29,7 @@
     color: #101828;
 }
 
-#button:hover a  {
+#button-help:hover a  {
   opacity: 0;
   visibility: hidden;
 }
