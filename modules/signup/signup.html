@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/modules/login/login.css" />
+<link rel="stylesheet" href="/modules/signup/signup.css" />
 
 
 <section class="login-page" >
@@ -6,8 +6,8 @@
         <figure>
             <img src="/assets/images/svg/auth-svg/logo.svg" alt="Logo">
         </figure>
-        <h1>Welcome Back!</h1>
-        <p>Enter your details to access your account</p>
+        <h1>Join TaskMaster</h1>
+        <p>Create an account to boost your productivity</p>
     </section>
 
     <section class="login-page__middle">
@@ -19,12 +19,18 @@
         <section class="name-input" data-import="/components/input-name/input.html"></section>
         <section class="email-input" data-import="/components/input-email/input.html"></section>
         <section class="password-input" data-import="/components/input-password/input.html"></section>
+        <p class="password-text">Password must be at least 6 characters long</p>
 
-        <section id="button-imports">
+        <section id="button-imports" class="button-imports">
             <div id="import-btn1" data-import="/components/btn-help/btn.html"></div>
             <div id="import-btn2" data-import="/components/btn-next-step/btn.html"></div>
         </section>
     </form>
+    <article class="foot-texts">
+        <span class="text-span">By continuing, you agree to our</span> 
+        <a href="#" class="a">Terms of Service</a> & <a href="#" class="a">Privacy Policy</a> <br>
+        © 2024 TaskMaster | Made for University Students
+    </article>
 </section>
 
 

@@ -1,9 +1,15 @@
+body {
+    overflow-x: hidden;
+    max-width: 1200px;
+    max-height: 120rem;
+} 
+
 .container {
     position: absolute;
     font-family: "ui-sans-serif", system-ui, sans-serif;
     box-sizing: border-box;
+    height: 100%;
     width: 100vw;
-    height: 108vh;
 }
 
 .root {
@@ -11,5 +17,8 @@
     height: 100%;
     z-index: 1;
     position: relative;
+}
 
+#signup {
+    margin-bottom: .75rem;
 }

@@ -1,5 +1,5 @@
 section.login-page {
-    height: 38.625rem;
+    height: 45.75rem;
     width: 28rem;
     position: absolute;
     top: 1.25rem;
@@ -8,6 +8,7 @@ section.login-page {
     z-index: 3;
     box-shadow: -1px 5px 20px 0px rgba(195, 180, 180, 0.75);
     border-radius: .75rem;
+    margin-bottom: .625rem;
 }
 
 .login-page__top {
@@ -21,14 +22,14 @@ section.login-page {
     height: 5rem;
     position: absolute;
     left: 11.5rem;
-    top: .7rem;
+    top: 1rem;
 }
 
 h1 {
     font-size: 1.9rem;
     position: relative;
-    top: 6.8rem;
-    left: 7.1rem;
+    top: 6.9rem;
+    left: 6.8rem;
     font-weight: 700;
     line-height: 2.25rem;
 }
@@ -37,14 +38,14 @@ p {
     position: relative;
     line-height: 1.5rem;
     font-size: 1rem;
-    top: 5.96rem;
-    left: 5rem;
+    top: 6.15rem;
+    left: 4.1rem;
     color: #596371;
 }
 
 .login-page__middle {
     position: relative;
-    left: 1.65rem;
+    left: 1.58rem;
     width: 25rem;
     height: 2.25rem;
     background-color: #F3F4F6;
@@ -66,10 +67,11 @@ p {
     align-items: center;
     border-radius: .5rem;
     border: none;
+    margin: 1px;
     font-weight: 500;
 }
 
-.bttn.one {
+.bttn.two {
     background-color: #fff;
 }
 
@@ -77,14 +79,22 @@ p {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 0.8rem;
+    top: 0.82rem;
     left: 1.4rem;
+}
+
+.password-text {
+    font-size: .75rem;
+    color: #9096A2;
+    position: relative;
+    top: -3px;
+    left: 2px;
 }
 
 .button-imports {
     display: flex;
     gap: 1rem;
-    margin-top: 1.9rem;
+    margin: .5rem 0 0 .05rem;
 }
 
 .foot-texts {

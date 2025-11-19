@@ -1,36 +1,4 @@
-
-
-/* .root__main {
-    height: 38.625rem;
-    width: 28rem;
-    background-color: #898784;
-    z-index: 2;
-    position: absolute;
-    top: 1.25rem;
-    left: 28.2rem; 
-}*/
-
-#login {
-    /* z-index: 2; */
-    /* height: 38.625rem;
-    width: 28rem;
-    position: absolute;
-    top: 1.25rem;
-    left: 28.2rem;
-    border: 2px solid black;
-    overflow: hidden; */
-}
-
-
-
-
-#signup {
-    z-index: 3;
-    height: 45.75rem;
-    width: 28rem;
-    background-color: blue;
-    position: absolute;
-    top: 1.25rem;
-    left: 28.2rem;
-    overflow: hidden;
+:root {
+    font-family: "ui-sans-serif", system-ui, sans-seri;
+    font-size: 16px;
 }
