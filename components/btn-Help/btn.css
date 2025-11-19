@@ -1,35 +1,29 @@
-#button-help {
+.btn-help {
     padding: 0.5rem 1rem;
     width: 12rem;
     height: 3rem;
     background-color: #F9FAFB;
     border-radius: .75rem;
     border: 2px solid #E5E7EB;
-}
-
-#button-help a {
-    text-decoration: none;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-#button-help a img {
+.btn-help img {
     width: 1.125rem;
     height: 1.125rem;
-    /* color: #364153; */
 }
 
-#btnText {
+.btn-text {
     font-size: 14px;
-    font-family: "ui-sans-serif", system-ui, sans-serif;
-    Font-weight: 600;
+    font-weight: 600;
     line-height: 1.25rem;
     color: #101828;
 }
 
-#button-help:hover a  {
+.btn-help:hover {
   opacity: 0;
   visibility: hidden;
 }

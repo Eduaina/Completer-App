@@ -13,9 +13,11 @@ const displayImports = (elements) => {
       })
       .then((component) => {
         element.innerHTML = component;
+        // loadComponentStyles(element);
         loadComponentScripts(element);
-        const compElements = element.querySelectorAll("[data-import]");
-        displayImports(compElements)
+
+        const nestedImports = element.querySelectorAll("[data-import]");
+        displayImports(nestedImports);
       })
       .catch(() => {
         element.innerHTML = `<h4>Component not found</h4>`;
@@ -41,3 +43,17 @@ function loadComponentScripts(element) {
     element.appendChild(newScript);
   }
 }
+
+// function loadComponentStyles(element) {
+//   const links = element.querySelectorAll("link[rel='stylesheet']");
+
+//   for (let link of links) {
+//     const newLink = document.createElement("link");
+//     newLink.rel = "stylesheet";
+//     newLink.href = link.href;
+//     document.head.appendChild(newLink);
+//     link.remove();
+//   }
+// }
+
+// loadComponentStyles(element);
