@@ -1,6 +1,6 @@
 section.login-page {
     border:2px solid black;
-    height: 38.625rem;
+    /* height: 38.625rem; */
     width: 28rem;
     position: absolute;
     top: 1.25rem;
@@ -10,4 +10,74 @@ section.login-page {
     box-shadow: -1px 5px 20px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 5px 20px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 5px 20px 0px rgba(0,0,0,0.75);
+}
+
+.login-page__top {
+    width: 28rem;
+    height: 14.125rem;
+    position: relative;
+}
+
+.login-page__top img {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    left: 11.5rem;
+    top: .7rem;
+}
+
+h1 {
+    font-size: 1.9rem;
+    position: relative;
+    top: 6.8rem;
+    left: 7.1rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+}
+
+p {
+    position: relative;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    top: 5.96rem;
+    left: 5rem;
+}
+
+.login-page__middle {
+    position: relative;
+    left: 1.65rem;
+    width: 25rem;
+    height: 2.25rem;
+    background-color: #F3F4F6;
+    border-radius: .75rem;
+    display: grid;
+    grid-template-columns: 196px 196px;
+    grid-template-rows: 30px;
+    gap: 6px;
+    text-align: center;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.bttn {
+    position: relative;
+    top: 3px;
+    align-items: center;
+    border-radius: .5rem;
+    border: none;
+}
+
+.bttn.one {
+    background-color: #fff;
+}
+
+.login-page__form {
+    /* display: flex; */
+    position: relative;
+    flex-direction: column;
+    margin: .625rem auto;
+    bottom: .625rem;
+    left: 1.25rem;
 }
