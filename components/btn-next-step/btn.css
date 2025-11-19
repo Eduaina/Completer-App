@@ -2,7 +2,7 @@
     padding: 0.5rem 1rem;
     width: 12.25rem;
     height: 3rem;
-    background-color: #E9A700;
+    background-color: #f6bf35;
     border-radius: .75rem;
     border: none;
 }
@@ -29,5 +29,5 @@
 }
 
 #button:hover {
-  background: linear-gradient(to right, #d99114, #a1711d);
+  background: linear-gradient(to right, #f6b951, #d2901d);
 }

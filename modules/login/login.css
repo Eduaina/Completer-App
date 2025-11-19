@@ -1,18 +1,16 @@
 section.login-page {
-    /* height: 38.625rem; */
+    height: 38.625rem;
     width: 28rem;
     position: absolute;
     top: 1.25rem;
     left: 28.2rem;
     overflow: hidden;
-    z-index: 1;
+    z-index: 3;
     box-shadow: -1px 5px 20px 0px rgba(195, 180, 180, 0.75);
-    -webkit-box-shadow: -1px 5px 20px 0px rgba(114, 98, 98, 0.75);
-    -moz-box-shadow: -1px 5px 20px 0px rgba(0,0,0,0.75);
 }
 
 .login-page__top {
-    width: 28rem;
+    width: 100%;
     height: 14.125rem;
     position: relative;
 }
@@ -73,8 +71,9 @@ p {
 }
 
 .login-page__form {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    margin: .625rem auto;
     top: 0.8rem;
     left: 1.4rem;
 }
@@ -82,12 +81,22 @@ p {
 .button-imports {
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.9rem;
 }
 
-.button-imports .btn-help,
-.button-imports .btn-next-step {
-    flex: 1;
-    /* width: 12.25rem;
-    height: 3rem; */
+.foot-texts {
+    color: #9096A2;
+    position: relative;
+    bottom: -2.33rem;
+    font-size: .875rem;
+    text-align: center;
+}
+
+.text-span, .a {
+    font-size: .75rem;
+}
+
+.a {
+    text-decoration: none;
+    color: #155DFC;
 }
