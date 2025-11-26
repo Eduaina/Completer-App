@@ -52,10 +52,6 @@ const componentElements = document.querySelectorAll("[data-import]");
 
 
 
-
-// ===============================
-// PROMISE-BASED IMPORT FUNCTION
-// ===============================
 async function displayImports(elements) {
   for (let element of elements) {
     const importFile = element.getAttribute("data-import");
@@ -69,7 +65,6 @@ async function displayImports(elements) {
 
       loadComponentScripts(element);
 
-      // Recursively process nested imports
       const nested = element.querySelectorAll("[data-import]");
       if (nested.length > 0) {
         await displayImports(nested);
@@ -84,9 +79,8 @@ async function displayImports(elements) {
 
 displayImports(componentElements);
 
-// ===============================
-// SCRIPT LOADER
-// ===============================
+
+
 function loadComponentScripts(element) {
   const scripts = element.querySelectorAll("script");
 

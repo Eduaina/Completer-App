@@ -1,7 +1,14 @@
+body {
+    overflow-x: hidden;
+    max-width: 1200px;
+    max-height: 1920px;
+} 
+
 .container {
     position: absolute;
+    font-family: "ui-sans-serif", system-ui, sans-serif;
     box-sizing: border-box;
-    height: auto;
+    height: 100%;
     width: 100vw;
 }
 
